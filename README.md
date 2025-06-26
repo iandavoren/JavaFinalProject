@@ -10,6 +10,7 @@ Player.java shared/src/player/ Player model (shared across both sides)
 
 
 **FOR MACBOOK:**
+
 (Created batch setup files)
 brew install --cask powershell
 
