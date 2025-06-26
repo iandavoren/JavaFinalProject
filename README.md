@@ -9,25 +9,35 @@ Player.java shared/src/player/ Player model (shared across both sides)
 
 
 
-**FOR MACBOOK:**
+**FOR MACBOOK:**  
+**(Created batch setup files)**  
+`brew install --cask powershell`  
 
-(Created batch setup files)
-brew install --cask powershell
+---
 
-Initial Setup and Compile:
+### Initial Setup and Compile:
+```bash
 cd Monopoly
+
 pwsh -NoProfile -ExecutionPolicy Bypass -File ./compile-all.ps1
+```
 
-Run Server: (Monopoly folder)
-java -cp
-"shared/out:server/out:libs/sqlite-jdbc-3.43.2.0.jar:libs/slf4j-api-2.0.9.jar:libs/slf4j-simple-
-2.0.9.jar" \monopoly.server.GameServer
+---
 
-Run Client (on each new window)
-Create new terminal
-cd to the client folder
+### Run Server: (Monopoly folder)
+```bash
+java -cp "shared/out:server/out:libs/sqlite-jdbc-3.43.2.0.jar:libs/slf4j-api-2.0.9.jar:libs/slf4j-simple-2.0.9.jar" \monopoly.server.GameServer
+```
+
+---
+
+### Run Client (on each new window)
+```bash
+# Create new terminal
+# cd to the client folder
+
 java -cp out:../shared/out monopoly.client.MonopolyGUI localhost 5100
-
+```
 
 
 
